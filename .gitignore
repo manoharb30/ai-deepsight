@@ -1,0 +1,54 @@
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+**/dependency-reduced-pom.xml
+
+# Gradle (if used accidentally)
+.gradle
+build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Mac
+.DS_Store
+
+# Environment Files
+.env
+*.env
+
+# Lombok config
+lombok.config
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Temporary files
+*.tmp
+*.swp
+
+# Test coverage tools
+coverage/
+.nyc_output/
+coverage-final.json
+.clover/
+
+# Spring Boot Dev Tools
+.spring-boot-devtools.properties
