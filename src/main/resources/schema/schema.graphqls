@@ -4,11 +4,31 @@ type Query {
 }
 
 type Mutation {
-  createUser(name: String!, email: String!): User
+  createUser(name: String!, email: String!, password: String!): User
 }
+
 
 type User {
   id: ID!
   name: String!
   email: String!
+  password: String
+  isEmailVerified: Boolean
+  verificationToken: String
+  verificationTokenExpiry: String
+  sessionId: String
+  credits: Int
+  subscriptionActive: Boolean
+  planType: String
+  preferredModel: String
+  profileImageUrl: String
+  phone: String
+  organization: String
+  address: String
+  timezone: String
+  isActive: Boolean
+  lastLogin: String
+  createdAt: String
+  updatedAt: String
 }
+
