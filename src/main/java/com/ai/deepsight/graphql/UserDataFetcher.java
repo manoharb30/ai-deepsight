@@ -5,6 +5,8 @@ import com.ai.deepsight.repository.UserRepository;
 import com.netflix.graphql.dgs.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
+
 @DgsComponent
 public class UserDataFetcher {
 
@@ -14,6 +16,11 @@ public class UserDataFetcher {
     @DgsQuery
     public User getUserByEmail(@InputArgument String email) {
         return userRepository.findByEmail(email).orElse(null);
+    }
+
+    @DgsQuery
+    public List<User> getUsers() {
+        return userRepository.findAll();
     }
 
     @DgsMutation
