@@ -49,8 +49,8 @@ public class User {
     protected void onCreate() {
         this.createdAt = LocalDateTime.now();
         this.updatedAt = LocalDateTime.now();
-        this.isActive = true;
-        this.isEmailVerified = false;
+        if (this.isActive == null) this.isActive = false;
+        if (this.isEmailVerified == null) this.isEmailVerified = false;
         this.credits = this.credits == null ? 0 : this.credits;
     }
 
